@@ -8,9 +8,8 @@ Logistic regression is used for binary classification tasks. The cost function f
 
 ### Cost Function with L2 Regularization (Ridge)
 The cost function \( J(\theta) \) with L2 regularization is defined as:
-```latex
-J(\theta) = -\frac{1}{N} \sum_{i=1}^N \left[ y_i \log(h_\theta(x_i)) + (1 - y_i) \log(1 - h_\theta(x_i)) \right] + \frac{\lambda}{2N} \sum_{j=1}^M \theta_j^2
-```
+$$ J(\theta) = -\frac{1}{N} \sum_{i=1}^{N} \left[ y_i \log(h_\theta(x_i)) + (1 - y_i) \log(1 - h_\theta(x_i)) \right] $$
+
 #### Sigmoid Function
 ```latex
 h_\theta(x) = \frac{1}{1 + e^{-\theta^T x}}
